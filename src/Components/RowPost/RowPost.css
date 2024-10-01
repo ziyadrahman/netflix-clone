@@ -1,0 +1,32 @@
+.row {
+    margin-left: 20px;
+  }
+  
+  .posters {
+    display: flex;
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    padding: 20px;
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+  }
+  
+  .posters::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome/Safari */
+  }
+  
+  .poster {
+    flex: 0 0 auto;
+    margin-right: 10px;
+  }
+  
+  .poster img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    /* border-radius: 10px; */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .poster img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
