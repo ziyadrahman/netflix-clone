@@ -6,6 +6,7 @@ import { base_url, banner_size,api_key } from '../../Constants/Constants'; // Co
 function Banner() {
     const [movie, setMovie] = useState({});  // **State to store the movie data**
 
+   
     useEffect(() => {
         const fetchData = async () => {
             const response = await axios.get(
